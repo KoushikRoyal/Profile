@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.9a264c77.js",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.620a1acdde179c8e2233.jpg",
+    "static/media/klu.png": "/static/media/klu.f2456d1d6acb817aef35.png",
+    "static/media/redhat.jpg": "/static/media/redhat.08cebe2e694d3d61f2a7.jpg",
+    "static/media/oracle.jpg": "/static/media/oracle.0d4650e572151df15fcd.jpg",
+    "static/media/automobile_management.jpg": "/static/media/automobile_management.b8cd04b70c46aabd14b4.jpg",
+    "static/media/ml_on_heart_disease.jpg": "/static/media/ml_on_heart_disease.bf007459191b71c8abfd.jpg",
+    "static/media/potato_disease_prediction.jpg": "/static/media/potato_disease_prediction.ad7cfcb3ba6652576bc5.jpg",
+    "static/media/awssaa.jpg": "/static/media/awssaa.1dd81e1321b8303affd6.jpg",
+    "static/media/developercertificate.jpg": "/static/media/developercertificate.caba83ee8e741ebd6b11.jpg",
+    "static/media/aiml.jpg": "/static/media/aiml.b4ebcd956343b1ced74a.jpg",
+    "static/media/awscp.jpg": "/static/media/awscp.1524fca97e4d96478427.jpg",
+    "static/media/library_management_project.jpg": "/static/media/library_management_project.6153a8385f4e596c3fa5.jpg",
+    "index.html": "/index.html",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.9a264c77.js.map": "/static/js/main.9a264c77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.9a264c77.js"
+  ]
+}
