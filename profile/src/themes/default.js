@@ -6,16 +6,16 @@ export default {
     },
     // Colors for layout
     colors: {
-      primary1: "#854CE6",
-      background1: "#222A35",
-      button: "#854CE6",
-      background2: "#19212C",
-      text: "#C8CFD8",
-      text1: "#F2F5F7",
-      text2: "#626970",
-      text3: "#575C66",
-      footerBackground: "#00012B"
-    },
+      primary1: "#4285F4", // Google blue for primary elements
+      background1: "#FFFFFF", // Clean white background for a modern look
+      button: "#4285F4", // Google blue for buttons
+      background2: "#F1F3F4", // Light grey for subtle contrast
+      text: "#202124", // Dark grey for primary text
+      text1: "#5F6368", // Medium grey for secondary text
+      text2: "#9AA0A6", // Soft grey for additional text
+      text3: "#757575", // Neutral grey for less prominent text
+      footerBackground: "#F1F3F4" // Light grey for footer background
+  },
     // Breakpoints for responsive design
     breakpoints: {
       sm: 'screen and (max-width: 640px)',
