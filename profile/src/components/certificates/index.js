@@ -1,6 +1,5 @@
-
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -18,6 +17,11 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     padding: 40px 0px 80px 0px;
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.2) 10%, rgba(33, 150, 243, 0.3) 90%);
+    background: -moz-linear-gradient(135deg, rgba(255, 87, 34, 0.2) 10%, rgba(33, 150, 243, 0.3) 90%);
+    background: -webkit-linear-gradient(135deg, rgba(255, 87, 34, 0.2) 10%, rgba(33, 150, 243, 0.3) 90%);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 24px;
     @media (max-width: 960px) {
         padding: 0px;
     }
@@ -72,37 +76,32 @@ const TimelineSection = styled.div`
     gap: 12px;
 `;
 
-
-
 const index = () => {
     return (
         <Container id="certificates">
             <Wrapper>
                 <Title>Certificates</Title>
                 <Desc>
-                I have got this skills, and I have got this certificates to prove it !
+                I have got these skills, and I have got these certificates to prove it!
                 </Desc>
                 <TimelineSection sx={{m:2}} >
                     <Timeline>
-                        {certificates.map((experiences,index) => (
-                            <>
-                                <>
-                                    <class variant="outlined" color="secondary" >
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                    </class>
-                                </>
-                                <class sx={{ py: '12px', px: 3,margin:'' }}>
-                                    <ExperienceCard experience={experiences}/>
-                                    <br/>
-                                </class>
-                            </>
+                        {certificates.map((certificate, index) => (
+                            <TimelineItem key={index}>
+                                <TimelineSeparator>
+                                    <TimelineDot variant="outlined" color="secondary" />
+                                    {index !== certificates.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                </TimelineSeparator>
+                                <TimelineContent sx={{ py: '12px', px: 3 }}>
+                                    <ExperienceCard experience={certificate}/>
+                                </TimelineContent>
+                            </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>
-    )
+    );
 }
 
-export default index
+export default index;

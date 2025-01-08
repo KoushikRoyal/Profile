@@ -3,14 +3,16 @@ import awscp from "../images/awscp.jpg";
 import awssaa from "../images/awssaa.jpg";
 import lms from "../images/library_management_project.jpg";
 import amms from "../images/automobile_management.jpg";
+import ecommerce from "../images/ecommerce.png"
 import mlhd from "../images/ml_on_heart_disease.jpg";
 import pdp from "../images/potato_disease_prediction.jpg";
 import redhat from "../images/redhat.jpg";
 import narayana from "../images/narayana.jpg";
 import sri_chaitanya from "../images/sri_chaitanya.jpg";
-import ak from "../images/HeroImage.jpg";
+import ak from "../images/koushik.jpg";
 import klu from "../images/klu.png";
 import aiml from "../images/aiml.jpg";
+import sel from "../images/sel.jpeg"
 import developercertificate from "../images/developercertificate.jpg";
 export const Bio = {
   name: "Akula Koushik",
@@ -161,8 +163,8 @@ export const education = [
   {    id: 0,    img:klu,
     school: "KL University,Vijayawada",
     date: " 09/2021 – Present",
-    grade: "9.64 CGPA(Present)",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at KL University,Vijayawada. I have completed 4 semesters and have a CGPA of 9.88. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a Director of Community of the Kognitiv University at KL University, where I am learning and working on exciting projects with a team of talented developers.",
+    grade: "9.67 CGPA(Present)",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at KL University,Vijayawada. I have completed 7 semesters and have a CGPA of 9.67. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a Member of Community of the Kognitiv University at KL University, where I am working as an junior developer in webileapps .",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
@@ -188,9 +190,36 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Automobile Management system",
+    title: "Ecommerce",
+    date: "Nov 2024 - Jan 2025",
+    description:" Build a MERN-based eCommerce app with features like product catalog, cart, authentication, payment gateway, and admin dashboard for management",
+    image:ecommerce,
+    tags: [
+     "React",
+      "Node js",
+      "MongoDB",
+      "Netlify",
+      "Cyclic.sh",
+      "Express Js",
+      "Redux",
+    ],
+    github:"https://github.com/KoushikRoyal/Ecommerce",
+    category: "web app",
+    member: [
+      {
+        name: "Akula Koushik",
+        img: ak,
+        linkedin: "https://www.linkedin.com/in/koushik-akula-914028226/",
+        github:"https://github.com/KoushikRoyal/",
+      }
+    ],
+  },
+
+  {
+    id: 1,
+    title: "Automobile Management System",
     date: "May 2023 - Sep 2023",
-    description:" The React-based automobile management system prioritizes security",
+    description:" The React-based automobile management system",
     image:amms,
     tags: [
      "React",
@@ -213,7 +242,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Heart Disease Prediction Using Machine Learning",
     date: "Jun 2023 - Sep 2023",
     description:"Using Machine Learning ensemble classifiers like Random forest to improve the accuracy of prediction",
@@ -233,10 +262,10 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Library Management System ",
-    date: "Jan 2023-Feb 2024",
-    description:"TalentHub is a comprehensive web-based platform designed to facilitate the efficient management of candidate profiles throughout the recruitment process. The system aims to streamline the entire recruitment lifecycle, from the initial submission of candidate profiles to the final selection and onboarding.",
+    date: "sep 2023-Feb 2024",
+    description:"Build a Library Management System with Spring Boot. ",
     image:lms,
     tags: [
       "Core Java",
@@ -261,10 +290,10 @@ export const projects = [
     ]
   },
   {
-    id: 9,
+    id: 4,
     title: "Image Recognition System",
-    date: "Jun 2023 - Jul 2023",
-    description:"By using tensorflow , i trained the model for large sized datasets and predicted the image which class it belongs in general",
+    date: "Jun 2023 - Aug 2023",
+    description:"Using TensorFlow, I trained a model on large datasets to classify images and predict their corresponding class efficiently.",
     image:pdp,
     tags: [
       "Deep Learning"
@@ -279,8 +308,40 @@ export const projects = [
         github:"https://github.com/KoushikRoyal/",
       }
     ],
-  }
+  },
+
+  {
+    id: 5,
+    title: "Quality Assurance  With Selenium",
+    date: "Aug 2024 - Nov 2024",
+    description:" Selenium tools like WebDriver supports cross-browser testing",
+    image:sel,
+    tags: [
+     "Unit Testing",
+      "Integration Testing",
+      "Functional Testing",
+      "Performance Testing",
+      "Acceptance Testing",
+      " Automation",
+      "Selenium",
+    ],
+    github:"https://github.com/KoushikRoyal/Ecommerce",
+    category: "web app",
+    member: [
+      {
+        name: "Akula Koushik",
+        img: ak,
+        linkedin: "https://www.linkedin.com/in/koushik-akula-914028226/",
+        github:"https://github.com/KoushikRoyal/",
+      }
+    ],
+  },
+
+
 ];
+
+
+
 
 
 export const certificates=[

@@ -1,6 +1,5 @@
-
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -18,6 +17,9 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     padding: 0px 0px 60px 0px;
+    background: linear-gradient(135deg, rgba(34, 193, 195, 0.1) 10%, rgba(253, 187, 45, 0.2) 90%); /* Gradient background */
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 24px;
     @media (max-width: 960px) {
         padding: 0px;
     }
@@ -39,22 +41,24 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: black; /* Changed to black */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Optional text-shadow for better readability */
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 32px;
+    }
 `;
 
 const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
+    color: black; /* Changed to black */
+    opacity: 0.8; /* Slight opacity for subtle effect */
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 16px;
@@ -75,8 +79,6 @@ const TimelineSection = styled.div`
     }
 `;
 
-
-
 const index = () => {
     return (
         <Container id="education">
@@ -87,23 +89,22 @@ const index = () => {
                 </Desc>
                 <TimelineSection>
                     <Timeline>
-                        {education.map((education,index) => (
-                            <TimelineItem >
+                        {education.map((education, index) => (
+                            <TimelineItem key={index}>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <EducationCard education={education}/>
+                                    <EducationCard education={education} />
                                 </TimelineContent>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    {index !== education.length && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default index
+export default index;
